@@ -47,7 +47,6 @@ class DataTransformation:
                 ('scaler',StandardScaler())
 
                 ]
-
             )
             
             # Categorigal Pipeline
@@ -57,7 +56,6 @@ class DataTransformation:
                 ('ordinalencoder',OrdinalEncoder(categories=[cut_categories,color_categories,clarity_categories])),
                 ('scaler',StandardScaler())
                 ]
-
             )
             
             preprocessor=ColumnTransformer([
@@ -67,13 +65,8 @@ class DataTransformation:
             
             return preprocessor
             
-
-            
-            
-        
         except Exception as e:
             logging.info("Exception occured in the initiate_datatransformation")
-
             raise customexception(e,sys)
             
     
