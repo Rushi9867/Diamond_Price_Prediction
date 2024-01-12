@@ -1,0 +1,15 @@
+artifact_uri: file:///config/workspace/mlruns/0/fae5174d7adf4d01aead48dd267156ed/artifacts
+end_time: 1705070581965
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fae5174d7adf4d01aead48dd267156ed
+run_name: grandiose-dove-116
+run_uuid: fae5174d7adf4d01aead48dd267156ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705070578945
+status: 3
+tags: []
+user_id: abc
