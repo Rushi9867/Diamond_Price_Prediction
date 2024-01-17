@@ -23,7 +23,7 @@ with DAG(
 
     def data_ingestion(**kwargs):
         ti = kwargs["ti"]
-        train_data_path.test_data_path = training_pipeline.start_data_ingestion()
+        train_data_path,test_data_path = training_pipeline.start_data_ingestion()
         ti.xcom_push("data_ingestion_artifact",{"train_data_path":train_data_path,"test_data_path":test_data_path})
 
     def data_transformation(**kwargs):
