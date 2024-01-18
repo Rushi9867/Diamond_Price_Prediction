@@ -81,6 +81,14 @@ pip install -r requirements.txt
     dvc push
 ```
 
+```
+    dvc dag
+```
+
+```
+    dvc repro
+```
+
 ### STEP 06 APACHE AIRFLOW
 
 
