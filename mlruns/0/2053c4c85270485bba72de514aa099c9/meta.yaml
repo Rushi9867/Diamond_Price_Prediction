@@ -1,0 +1,15 @@
+artifact_uri: file:///config/workspace/mlruns/0/2053c4c85270485bba72de514aa099c9/artifacts
+end_time: 1705585391973
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2053c4c85270485bba72de514aa099c9
+run_name: aged-goat-605
+run_uuid: 2053c4c85270485bba72de514aa099c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705585388598
+status: 3
+tags: []
+user_id: abc

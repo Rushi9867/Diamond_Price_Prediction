@@ -1,4 +1,4 @@
-# diamond Price Prediction 
+# Diamond Price Prediction 
 
 # How to run?
 ### STEPS:
@@ -36,9 +36,31 @@ menv\Scripts\cativate
 pip install -r requirements.txt
 ```
 
+### STEP 03 RUN WebApplication
 
+```bash
+    python app.py
+```
 
-### STEP 0 - DVC
+```
+    localhost:8000/predict
+```
+### STEP 04  - MLFLOW
+
+[Documentation](https://mlflow.org/docs/latest/python_api/mlflow.html)
+
+```bash
+    python test.py
+```
+
+```bash 
+    mlflow ui
+```
+
+### STEP 05 - DVC
+
+[Documentation](https://dvc.org/doc)
+
 ```bash
     dvc init
 ```
@@ -57,4 +79,27 @@ pip install -r requirements.txt
 
 ```bash
     dvc push
+```
+
+### STEP 06 APACHE AIRFLOW
+
+
+[Documentation](https://airflow.apache.org/docs/)
+ 
+
+[Dagshub](https://dagshub.com/)
+
+### STEP 07 DOCKER 
+
+```bash
+    docker-compose up
+```
+
+```bash
+    localhost:8080
+```
+
+```bash
+    Username : admin
+    password : admin
 ```
