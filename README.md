@@ -103,3 +103,7 @@ pip install -r requirements.txt
     Username : admin
     password : admin
 ```
+
+```
+    docker-compose down
+```
