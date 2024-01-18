@@ -1,8 +1,20 @@
 version: "3"
 services:
-  application:
-    build: .
-    image: ${IMAGE_NAME}
-    container_name: diamond-prediction
+  airflow:
+    build:
+      context: ./
+      dockerfile: Dockerfile.airflow
+    image: airflowimage
+    container_name: diamond-prediction-airflow
     ports:
       - "8080:8080"
+    
+  flaskapp:
+    build:
+      context: ./
+      dockerfile: Dockerfile.flask
+    image: flaskimage
+    container_name: diamond-prediction-flask
+    ports:
+      - "8000:8000"
+    

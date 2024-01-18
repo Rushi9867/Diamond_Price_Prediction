@@ -11,3 +11,5 @@ pendulum
 apache-airflow
 apache-airflow-providers-mysql
 future-annotations
+
+-e .
