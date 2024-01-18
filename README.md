@@ -46,3 +46,15 @@ pip install -r requirements.txt
 ```bash
     dvc add Data/train.csv
 ```
+
+```bash
+    dvc checkout
+```
+
+```bash 
+    dvc remote add -d remote_storage /config/workspace/myremotestorage
+```
+
+```bash
+    dvc push
+```

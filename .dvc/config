@@ -1,0 +1,6 @@
+[core]
+    remote = remote_storage1
+['remote "remote_storage"']
+    url = /config/workspace
+['remote "remote_storage1"']
+    url = /config/workspace/myremotestorage
