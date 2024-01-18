@@ -7,6 +7,10 @@ mlflow==2.2.2
 dvc
 ipykernel
 xgboost
+pendulum
+apache-airflow
+apache-airflow-providers-mysql
+future-annotations
 
 # dev requirements -
 
