@@ -8,11 +8,11 @@ services:
     container_name: diamond-prediction-airflow
     ports:
       - "8080:8080"
-      
+
   flaskapp:
     build:
       context: ./
-      dockerfile: Dockerfile.flask
+      dockerfile: Dockerfile
     image: flaskimage
     container_name: diamond-prediction-flask
     ports:

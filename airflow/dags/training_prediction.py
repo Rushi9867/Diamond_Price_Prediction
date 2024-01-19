@@ -9,7 +9,7 @@ from airflow.operators.python import PythonOperator
 from src.pipeline.training_pipeline import TrainingPipeline
 
 training_pipeline = TrainingPipeline()
-
+'''
 with DAG(
     "diamond_tarining_pipeline",
     default_args = {"retries":2},
@@ -20,7 +20,7 @@ with DAG(
     tags = ["machine_learning","classification","diamond"],
 ) as dag:
     dag.doc_md = __doc__
-
+'''
     def data_ingestion(**kwargs):
         ti = kwargs["ti"]
         train_data_path,test_data_path = training_pipeline.start_data_ingestion()

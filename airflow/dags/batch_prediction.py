@@ -6,7 +6,7 @@ from asyncio import tasks
 from textwrap import dedent
 from airflow.operators.python import PythonOperator
 from src.pipeline.batch_prediction import BatchPredictionConfig,SensorBatchPrediction
-
+'''
 with DAG(
     'batch_prediction',
     default_args={'retries': 2},
@@ -17,6 +17,7 @@ with DAG(
     catchup=False,
     tags=['example'],
 ) as dag:
+'''
     def download_files(**kwargs):
         bucket_name = os.getenv("BUCKET_NAME")
         input_dir = "/app/input_files"
@@ -25,10 +26,10 @@ with DAG(
         os.system(f"aws s3 sync s3://{bucket_name}/inbox {config.inbox_dir}")
 
     def batch_prediction(**kwargs):
-        from sensor.pipeline.batch_prediction import BatchPredictionConfig,SensorBatchPrediction
-        config = BatchPredictionConfig()
-        sensor_batch_prediction = SensorBatchPrediction(batch_config=config)
-        sensor_batch_prediction.start_prediction()
+        from src.pipeline.prediction_pipeline import PredictPipeline,CustomData
+        config = PredictPipeline()
+        diamond_batch_prediction = predict(features=config)
+        diamond_batch_prediction.get_data_as_dataframe()
        
     def upload_files(**kwargs):
         bucket_name = os.getenv("BUCKET_NAME")
