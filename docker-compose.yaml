@@ -1,14 +1,6 @@
 version: "3"
 services:
-  airflow:
-    build:
-      context: ./
-      dockerfile: Dockerfile.airflow
-    image: airflowimage
-    container_name: diamond-prediction-airflow
-    ports:
-      - "8080:8080"
-    
+  
   flaskapp:
     build:
       context: ./
@@ -17,4 +9,10 @@ services:
     container_name: diamond-prediction-flask
     ports:
       - "8000:8000"
-    
+
+  environment:
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+      - MONGO_DB_URL=${MONGO_DB_URL}
+      - BUCKET_NAME=${BUCKET_NAME}  
