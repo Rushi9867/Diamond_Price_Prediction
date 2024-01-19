@@ -6,7 +6,7 @@ from asyncio import tasks
 from textwrap import dedent
 from airflow.operators.python import PythonOperator
 from src.pipeline.batch_prediction import BatchPredictionConfig,SensorBatchPrediction
-'''
+
 with DAG(
     'batch_prediction',
     default_args={'retries': 2},
@@ -17,7 +17,7 @@ with DAG(
     catchup=False,
     tags=['example'],
 ) as dag:
-'''
+
     def download_files(**kwargs):
         bucket_name = os.getenv("BUCKET_NAME")
         input_dir = "/app/input_files"
