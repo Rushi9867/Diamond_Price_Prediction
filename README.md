@@ -86,6 +86,25 @@ pip install -r requirements.txt
     dvc checkout
 ```
 
+```bash
+    git add .
+```
+```bash
+    git checkout 15d31ad458ae264964241aa9742b1b86225da5dd
+```
+
+```bash
+    dvc checkout
+```
+
+```bash 
+    git checkout main/master
+```
+
+```bash
+    dvc checkout
+```
+
 ```bash 
     dvc remote add -d remote_storage /config/workspace/myremotestorage
 ```
