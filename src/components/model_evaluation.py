@@ -27,7 +27,9 @@ class ModelEvaluation:
             model_path = os.path.join("artifacts","model.pkl")
             model = load_object(model_path)
 
-            #mlflow.set_registry_uri("")
+            ## For Remote Server Only (DAGSHUB)
+            remote_server_uri = "https://dagshub.com/Rushi9867/Diamond_Price_Prediction.mlflow"
+            mlflow.set_tracking_uri(remote_server_uri)
             logging.info("Model has register")
             tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
             print(tracking_url_type_store)
