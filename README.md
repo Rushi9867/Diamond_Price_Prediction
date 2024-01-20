@@ -28,7 +28,7 @@ python -m venv menv
 ```
 
 ```bash
-menv\Scripts\cativate
+menv\Scripts\activate
 ```
 
 ### STEP 02- install the requirements
