@@ -1,6 +1,5 @@
 # Diamond Price Prediction 
-![Github logo](https://github.com/Rushi9867/Diamond_Price_Prediction/blob/main/Data/Gemstones.jpg =300x)
-<img src="https://github.com/Rushi9867/Diamond_Price_Prediction/blob/main/Data/Gemstones.jpg" alt="Alt text" width="300"/>
+<img src="https://github.com/Rushi9867/Diamond_Price_Prediction/blob/main/Data/Gemstones.jpg" alt="Alt text" width="1000"/>
 
 # How to run?
 ### STEPS:
